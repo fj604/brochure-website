@@ -17,7 +17,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <View as="section" id="contact" padding="2rem">
-      <Heading level={2}>Contact Us</Heading>
+      <Heading level={2} marginBottom="1rem">Contact Us</Heading>
       <View as="form" onSubmit={handleSubmit}>
         <TextField
           name="name"
@@ -25,6 +25,7 @@ const ContactForm: React.FC = () => {
           value={formData.name}
           onChange={handleChange}
           required
+          marginBottom="1rem"
         />
         <TextField
           name="email"
@@ -33,6 +34,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           type="email"
           required
+          marginBottom="1rem"
         />
         <TextField
           name="message"
@@ -41,6 +43,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           as="textarea"
           required
+          marginBottom="1rem"
         />
         <Button type="submit" variation="primary">Submit</Button>
       </View>
