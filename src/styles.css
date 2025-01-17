@@ -23,8 +23,11 @@ footer {
 
 .main-content {
   flex: 1;
-  margin-top: 4rem; /* Adjust based on header height */
-  margin-bottom: 4rem; /* Adjust based on footer height */
+  margin-top: 2rem; /* Adjust based on header height */
+  margin-bottom: 2rem; /* Adjust based on footer height */
   padding: 2rem; /* Add padding for consistent spacing */
 }
 
+section {
+  scroll-margin-top: 8rem; /* Adjust to match the header's height */
+}
